@@ -18,4 +18,3 @@ The input will always be in lowercase and never be empty.
     }
     return result;
 }
-console.log(wordsToMarks('i'));
