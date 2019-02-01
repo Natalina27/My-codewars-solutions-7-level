@@ -11,6 +11,13 @@ Note: this function will work within the basic ASCII character set to make this 
 
  */
 //My solution:
+1.
+const randomCase =x=>
+  x.split('')
+    .map(v => Math.random() < 0.5 ? v.toUpperCase() : v.toLowerCase()) 
+    .join('');
+
+2.
 function randomCase(x) {
     let res='';
     for(let i=0; i<x.length; i++){
@@ -22,12 +29,12 @@ function randomCase(x) {
     }
     return res;
 }
-/*
-or:
+
+3.
 function randomCase(x) {
   return x.split('')
           .map(function(e) { return Math.random() < 0.5 ? e.toUpperCase() : e.toLowerCase(); })
           .join('');
 }
 
- */
+ 
