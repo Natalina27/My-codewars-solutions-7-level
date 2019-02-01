@@ -10,6 +10,7 @@ The input will always be in lowercase and never be empty.
 */
 //My solution:
 
+1.
     function wordsToMarks(string){
     let alphabet ='0abcdefghijklmnopqrstuvwxyz';
     let result=0;
