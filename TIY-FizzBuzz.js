@@ -39,3 +39,7 @@ function tiyFizzBuzz(s){
   }
   return str;
 }
+3.
+function tiyFizzBuzz(sentence){
+  return sentence.replace(/[A-Zaeiou]/g,m=>/[aeiou]/.test(m)?'Yard':/[AEIOU]/.test(m)?'Iron Yard':'Iron');
+}
