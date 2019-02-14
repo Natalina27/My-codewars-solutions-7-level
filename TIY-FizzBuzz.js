@@ -8,6 +8,7 @@ If a letter is a lower case vowel, replace that character with "Yard".
 Ready?
  */
 //My solution:
+1.
 function tiyFizzBuzz(sentence){
     return sentence.split('').map((a) => {
         if(/[aeiou]/.test(a)) return 'Yard';
@@ -15,4 +16,26 @@ function tiyFizzBuzz(sentence){
         if(/[A-Z]/.test(a)) return 'Iron';
         else return a;
     }).join('');
+}
+2.
+function tiyFizzBuzz(s){
+  let str='';
+  for (let i=0; i<s.length; ++i)
+  {
+    if (s[i]>='A' && s[i]<='Z')
+    {
+      if (s[i]=='A' || s[i]=='E' || s[i]=='I' || s[i]=='O' || s[i]=='U')
+        str+='Iron Yard';
+      else
+        str+='Iron';
+    }
+    else
+    {
+      if (s[i]=='a' || s[i]=='e' || s[i]=='i' || s[i]=='o' || s[i]=='u')
+        str+='Yard';
+      else
+        str+=s[i];
+    }
+  }
+  return str;
 }
