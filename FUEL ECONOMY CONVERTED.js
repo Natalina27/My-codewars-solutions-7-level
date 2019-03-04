@@ -19,9 +19,26 @@ For this kata, use U.S. gallon, not imperial gallon.
 
  */
 //MY SOLUTION:
+//1.
 function mpg2lp100km(x){
     let coeff=(378.5411784/1.609344);
     return +( coeff/ x ).toFixed(2);
 }
 
 let lp100km2mpg = mpg2lp100km;
+//2.
+function mpg2lp100km(x){
+  const gallonToLiter=3.785411784
+  const milesToKm=1.609344
+  let result=(gallonToLiter*100)/(x*milesToKm);
+  
+  return +(Math.round(result+'e+2')+'e-2');
+}
+
+function lp100km2mpg(x){
+  const literToGallon = 0.26417205;
+  const KmToMiles=0.62137119;
+  result=(100*KmToMiles)/(x*literToGallon);
+  
+  return +(Math.round(result+'e+2')+'e-2');
+}
