@@ -8,7 +8,7 @@ If a letter is a lower case vowel, replace that character with "Yard".
 Ready?
  */
 //My solution:
-1.
+//1.
 function tiyFizzBuzz(sentence){
     return sentence.split('').map((a) => {
         if(/[aeiou]/.test(a)) return 'Yard';
@@ -17,29 +17,29 @@ function tiyFizzBuzz(sentence){
         else return a;
     }).join('');
 }
-2.
-function tiyFizzBuzz(s){
-  let str='';
-  for (let i=0; i<s.length; ++i)
-  {
-    if (s[i]>='A' && s[i]<='Z')
-    {
-      if (s[i]=='A' || s[i]=='E' || s[i]=='I' || s[i]=='O' || s[i]=='U')
-        str+='Iron Yard';
-      else
-        str+='Iron';
-    }
-    else
-    {
-      if (s[i]=='a' || s[i]=='e' || s[i]=='i' || s[i]=='o' || s[i]=='u')
-        str+='Yard';
-      else
-        str+=s[i];
-    }
-  }
-  return str;
-}
-3.
-function tiyFizzBuzz(sentence){
-  return sentence.replace(/[A-Zaeiou]/g,m=>/[aeiou]/.test(m)?'Yard':/[AEIOU]/.test(m)?'Iron Yard':'Iron');
-}
+// 2.
+// function tiyFizzBuzz(s){
+//   let str='';
+//   for (let i=0; i<s.length; ++i)
+//   {
+//     if (s[i]>='A' && s[i]<='Z')
+//     {
+//       if (s[i]=='A' || s[i]=='E' || s[i]=='I' || s[i]=='O' || s[i]=='U')
+//         str+='Iron Yard';
+//       else
+//         str+='Iron';
+//     }
+//     else
+//     {
+//       if (s[i]=='a' || s[i]=='e' || s[i]=='i' || s[i]=='o' || s[i]=='u')
+//         str+='Yard';
+//       else
+//         str+=s[i];
+//     }
+//   }
+//   return str;
+// }
+// 3.
+// function tiyFizzBuzz(sentence){
+//   return sentence.replace(/[A-Zaeiou]/g,m=>/[aeiou]/.test(m)?'Yard':/[AEIOU]/.test(m)?'Iron Yard':'Iron');
+// }

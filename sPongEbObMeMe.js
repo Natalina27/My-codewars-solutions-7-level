@@ -7,9 +7,9 @@
 spongeMeme("stop Making spongebob Memes!") // => 'StOp mAkInG SpOnGeBoB MeMeS!'
 spongeMeme("colored teens cant Be successful in tech") // =>'CoLoReD TeEnS CaNt bE SuCcEsSfUl iN TeCh'*/
 //My solution:
-1.
+// 1.
 function spongeMeme(s) {
-    let arr= s.split('')
+    let arr= s.split('');
     let arr1=[];
     for (let i=0; i<s.length; i++){
         if ((i+1) % 2){
@@ -21,7 +21,7 @@ function spongeMeme(s) {
     return arr1;
 }
 
-2.
-function spongeMeme(sentence) {
-return sentence.split('').map((v,i) => i % 2 ? v.toLowerCase(): v.toUpperCase()).join('');
-}
+// 2.
+// function spongeMeme(sentence) {
+// return sentence.split('').map((v,i) => i % 2 ? v.toLowerCase(): v.toUpperCase()).join('');
+// }
